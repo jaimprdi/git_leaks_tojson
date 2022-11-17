@@ -7,13 +7,13 @@ import sys
 
 
 REPO_URL = 'https://github.com/skalenetwork/skale-manager'
-REPO_PATH = 'skale__manager_final'
+REPO_PATH = 'skale__manager_a_rellenar'
 
 
 def clonar(REPO_URL):
-    # clonar aqui la url (si se ejecuta ahora no funcionara ya que el archio 'skale__manager_final' ya existe y no esta vacia
-    # si se quiere ejecutar perfecto, cambiar el nomre del repo path y el to_path
-    repo = Repo.clone_from(url=REPO_URL, to_path='skale__manager_final')
+    # clonar aqui la url (si se ejecuta ahora con un archivo lleno no funcionara ya que el archio 'skale__manager_a_rellenar' ya existiría y no esta vacia
+    # si se quiere ejecutar perfecto, ejecutar con este nombre y se guardara el cloning a la carpeta vacia
+    repo = Repo.clone_from(url=REPO_URL, to_path='skale__manager_a_rellenar')
     return 
 
 def salida_controlada():
