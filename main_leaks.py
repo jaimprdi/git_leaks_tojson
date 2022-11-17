@@ -13,6 +13,7 @@ REPO_PATH = 'skale__manager_a_rellenar'
 def clonar(REPO_URL):
     # clonar aqui la url (si se ejecuta ahora con un archivo lleno no funcionara ya que el archio 'skale__manager_a_rellenar' ya existiría y no esta vacia
     # si se quiere ejecutar perfecto, ejecutar con este nombre y se guardara el cloning a la carpeta vacia
+    # esto nos va acrear una carpeta nueva, y de ahi va a hacer los commits 
     repo = Repo.clone_from(url=REPO_URL, to_path='skale__manager_a_rellenar')
     return 
 
