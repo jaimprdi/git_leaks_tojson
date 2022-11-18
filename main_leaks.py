@@ -47,6 +47,7 @@ def load(diccionario):
     archivo=open('commits_to.json', 'w')  
     #cargamos los commits al json 
     json.dump(diccionario, archivo, indent=3)
+    archivo.close()
 
 
 def main():
